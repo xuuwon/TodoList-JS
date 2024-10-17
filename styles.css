@@ -1,0 +1,159 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+    height: 100%;
+    display: flex; /* container를 화면 중앙에 배치하기 위해 flex 사용 */
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    background-color: #252323;
+}
+
+.container {
+    width: 700px;
+    height: 900px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #70798C;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header {
+    width: 100%;
+    height: 24%;
+    background-color: #F5F1ED;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.header-text {
+    font-size: 70px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#input-todo {
+    width: 400px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding-left: 15px;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+#input-todo:focus {
+    outline: none;
+    border: 2px solid #7e7263;
+}
+
+#add-button, #delete-button  {
+    width: 80px;
+    height: 40px;
+    border: none;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:hover {
+    background-color: #A99985;
+    border: 1px solid  #7e7263 !important; /* 우선순위 밀림 */
+}
+
+button {
+    font-size: large;
+    border-radius: 10px;
+    background-color: #DAD2BC;
+    transition: background-color 0.3s ease, border 0.3s ease; /* 천천히 변하게 설정 */
+}
+
+.main {
+    width: 100%;
+    height: 66%;
+    padding: 40px;
+    overflow-y: scroll;
+    background-color: #F5F1ED;
+    border-radius: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    background-color: #F5F1ED;
+    border-radius: 20px;
+}
+
+
+.main-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.list {
+    width: 550px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 25px;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.list:hover {
+    border: 1px solid #A99985;
+}
+
+.list-buttons {
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.done-button, .delete-button {
+    border: none;
+    width: 70px;
+    height: 35px;
+}
+
+.done-list .todo-text {
+    text-decoration: line-through;
+}
+
+.done-list .list-buttons .done-button {
+    background-color: #A99985;
+}
+
+.main::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨기기 */
+}

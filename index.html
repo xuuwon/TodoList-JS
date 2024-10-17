@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TODO-LIST</title>
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Jua&family=Lilita+One&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Jua&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div style="display: flex; align-items: center; gap: 20px">
+                    <img src="calendar.png" style="width: 32px; height: 32px;">
+                    <p class="header-text">TODO LIST</p>
+                    <img src="calendar.png" style="width: 32px; height: 32px;">
+                </div>
+                <div class="header-form">
+                    <input id="input-todo" type="text" autocomplete="off">
+                    <button id="add-button"
+                        style="font-size: large;">추가</button>
+                    <button id="delete-button" style="font-size: large;">전체
+                        삭제</button>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="main-list"></div>
+            </main>
+
+            <footer class="footer">
+                <p
+                    style="font-size: 15px; color: rgb(66, 66, 66); font-family: Roboto, sans-serif; font-weight: 500; font-style: normal;">xuwon's
+                    TODO-LIST</p>
+                <div class="footer-sns" style="display: flex; gap: 5px;">
+                    <img src="link.png">
+                    <p
+                        style="font-size: 13px; color: rgb(166, 166, 166); font-family: Roboto, sans-serif; font-weight: 500; font-style: normal;"">xuwon.tistory.com
+                        | github.com/xuuwon</p>
+                </div>
+            </footer>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
